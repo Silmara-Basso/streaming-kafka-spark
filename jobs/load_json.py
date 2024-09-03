@@ -39,7 +39,7 @@ df.show()
 if df.rdd.isEmpty():
     print("File empty")
 else:
-    df.clean = df.withColumn("customer_name", regexp_replace(col("customer_name"), "@", ""))
+    df_clean = df.withColumn("customer_name", regexp_replace(col("customer_name"), "@", ""))
 
     # SQLite 
     sqlite_db_path = os.path.abspath("data/customer.db")
@@ -53,7 +53,7 @@ else:
     except:
         write_mode = "overwrite"
 
-    df.clean.write.jdbc(url=sqlite_uri, table="tb_customer", mode=write_mode, properties=properties)
+    df_clean.write.jdbc(url=sqlite_uri, table="tb_customer", mode=write_mode, properties=properties)
 
     print(f"Data inserted in 'customer.db' with '{write_mode}' method")
 
