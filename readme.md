@@ -22,3 +22,6 @@ docker exec sil-pyspark-master spark-submit --deploy-mode client ./apps/dedup.py
 
 ### To execute add columns test
 docker exec sil-pyspark-master spark-submit --deploy-mode client ./apps/add_new_col.py
+
+### To Date Operations examples
+docker exec sil-pyspark-master spark-submit --deploy-mode client ./apps/add_month.py
