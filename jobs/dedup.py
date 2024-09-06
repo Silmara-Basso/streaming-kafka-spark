@@ -40,7 +40,7 @@ print("Distinct Count: " + str(distinctDF.count()) + "\n")
 # without truncating cell values
 distinctDF.show(truncate=False)
 
-# Dedup - removing duplicates based on all columns
+# Dedup - removing duplicates based on all columns - For large volumes of data, drop is better than distinct
 df2 = df.dropDuplicates()
 
 print("Deduplicate records: " + str(df2.count()) + "\n")

@@ -16,3 +16,9 @@ http://localhost:18081
 
 ### To execute log level test (I'm using the log4j2.properties in conf directory to configure the log level)
 docker exec sil-pyspark-master spark-submit --deploy-mode client ./apps/log_level.py
+
+### To execute dedup test
+docker exec sil-pyspark-master spark-submit --deploy-mode client ./apps/dedup.py
+
+### To execute add columns test
+docker exec sil-pyspark-master spark-submit --deploy-mode client ./apps/add_new_col.py
