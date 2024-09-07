@@ -2,7 +2,7 @@
 
 import os
 from pyspark.sql import SparkSession
-from pyspark.sql.functions import expr
+from pyspark.sql.functions import expr 
 
 
 os.environ['TERM'] = 'xterm'

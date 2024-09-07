@@ -7,6 +7,7 @@ from pyspark.sql.functions import explode
 from pyspark.sql.functions import split
 from pyspark.sql.functions import array
 from pyspark.sql.functions import array_contains
+from pyspark.sql.functions import col, concat_ws
 
 #To clear the terminal windown
 os.environ['TERM'] = 'xterm'
@@ -52,6 +53,8 @@ df.select(df.candidates_name, array(df.previous_state,df.current_state).alias("e
 # filtering for "Python"
 df.select(df.candidates_name, array_contains(df.most_used_languages,"Python").alias("uses_python")).show()
 
+# Create a new DataFrame, converting the 'most_used_languages' column from an array to a string, separated by commas
+df2 = df.withColumn("most_used_languages", concat_ws(",",col("most_used_languages")))
 
-
-
+df2.printSchema()
+df2.show(truncate=False)
