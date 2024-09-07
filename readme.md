@@ -25,3 +25,6 @@ docker exec sil-pyspark-master spark-submit --deploy-mode client ./apps/add_new_
 
 ### To Date Operations examples
 docker exec sil-pyspark-master spark-submit --deploy-mode client ./apps/add_month.py
+
+### To Date Operations examples
+docker exec sil-pyspark-master spark-submit --deploy-mode client ./apps/expr.py
