@@ -31,3 +31,6 @@ docker exec sil-pyspark-master spark-submit --deploy-mode client ./apps/expr.py
 
 ### Lab7 - Working with Spark arrays
 docker exec sil-pyspark-master spark-submit --deploy-mode client ./apps/arrays.py
+
+### Lab8 - Working with Dictionary
+docker exec sil-pyspark-master spark-submit --deploy-mode client ./apps/dictionary.py
