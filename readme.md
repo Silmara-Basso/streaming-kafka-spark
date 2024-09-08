@@ -32,25 +32,23 @@ docker exec sil-pyspark-master spark-submit --deploy-mode client ./apps/expr.py
 ### Lab7 - Working with Spark arrays
 docker exec sil-pyspark-master spark-submit --deploy-mode client ./apps/arrays.py
 
-<<<<<<< HEAD
-### Lab8 - Selecting firsts and lasts rows
+### Lab8 - Working with Dictionary
+docker exec sil-pyspark-master spark-submit --deploy-mode client ./apps/Dictionary.py
+
+### Lab9 - Selecting firsts and lasts rows
 docker exec sil-pyspark-master spark-submit --deploy-mode client ./apps/top_rows.py
 
-### Lab9 - Selecting a sample
+### Lab10 - Selecting a sample
 docker exec sil-pyspark-master spark-submit --deploy-mode client ./apps/sampling.py
 
-### Lab10 - Working with rows
+### Lab11 - Working with rows
 docker exec sil-pyspark-master spark-submit --deploy-mode client ./apps/row.py
 
-### Lab11 - Aggregate e Stats 
+### Lab12 - Aggregate e Stats 
 docker exec sil-pyspark-master spark-submit --deploy-mode client ./apps/aggregate_stats.py
 
-### Lab12 - Convert Map to Column
+### Lab13 - Convert Map to Column
 docker exec sil-pyspark-master spark-submit --deploy-mode client ./apps/map_to_columns.py
 
-### Lab13 - Convert Column to Map
+### Lab14 - Convert Column to Map
 docker exec sil-pyspark-master spark-submit --deploy-mode client ./apps/columns_to_map.py
-=======
-### Lab8 - Working with Dictionary
-docker exec sil-pyspark-master spark-submit --deploy-mode client ./apps/dictionary.py
->>>>>>> 58a2e073b4c5710cf59c96483f3eb66486ef0293
