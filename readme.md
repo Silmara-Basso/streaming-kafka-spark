@@ -32,6 +32,7 @@ docker exec sil-pyspark-master spark-submit --deploy-mode client ./apps/expr.py
 ### Lab7 - Working with Spark arrays
 docker exec sil-pyspark-master spark-submit --deploy-mode client ./apps/arrays.py
 
+<<<<<<< HEAD
 ### Lab8 - Selecting firsts and lasts rows
 docker exec sil-pyspark-master spark-submit --deploy-mode client ./apps/top_rows.py
 
@@ -49,3 +50,7 @@ docker exec sil-pyspark-master spark-submit --deploy-mode client ./apps/map_to_c
 
 ### Lab13 - Convert Column to Map
 docker exec sil-pyspark-master spark-submit --deploy-mode client ./apps/columns_to_map.py
+=======
+### Lab8 - Working with Dictionary
+docker exec sil-pyspark-master spark-submit --deploy-mode client ./apps/dictionary.py
+>>>>>>> 58a2e073b4c5710cf59c96483f3eb66486ef0293
