@@ -52,3 +52,37 @@ docker exec sil-pyspark-master spark-submit --deploy-mode client ./apps/map_to_c
 
 ### Lab14 - Convert Column to Map
 docker exec sil-pyspark-master spark-submit --deploy-mode client ./apps/columns_to_map.py
+
+### Lab15 - Filter
+docker exec sil-pyspark-master spark-submit --deploy-mode client ./apps/filter.py
+
+### Lab16 - Drop Columns
+docker exec sil-pyspark-master spark-submit --deploy-mode client ./apps/drop_column.py
+
+### Lab17 - Explode Function
+docker exec sil-pyspark-master spark-submit --deploy-mode client ./apps/explode.py
+
+### Lab18 - Loop 
+docker exec sil-pyspark-master spark-submit --deploy-mode client ./apps/loop.py
+
+### Lab19 - Pivot 
+docker exec sil-pyspark-master spark-submit --deploy-mode client ./apps/pivot.py
+
+### Lab20 - Split Function
+docker exec sil-pyspark-master spark-submit --deploy-mode client ./apps/split.py
+
+### Lab21 - Collect
+docker exec sil-pyspark-master spark-submit --deploy-mode client ./apps/collect.py
+
+### Lab22 - Operators
+docker exec sil-pyspark-master spark-submit --deploy-mode client ./apps/operators.py
+
+### Lab23 - With Column 
+docker exec sil-pyspark-master spark-submit --deploy-mode client ./apps/withcolumn.py
+
+### Lab24 - Column Operations
+docker exec sil-pyspark-master spark-submit --deploy-mode client ./apps/column_operations.py
+
+### Lab25 - maptype - dataframe column
+docker exec sil-pyspark-master spark-submit --deploy-mode client ./apps/maptype-dataframe-column.py
+
