@@ -69,5 +69,5 @@ redRes = listRdd.treeReduce(add)
 print(redRes) # output 15
 
 # Collect all RDD elements
-dados = listRdd.collect()
-print(dados)
+data = listRdd.collect()
+print(data)
