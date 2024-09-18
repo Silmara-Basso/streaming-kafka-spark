@@ -71,3 +71,4 @@ print(redRes) # output 15
 # Collect all RDD elements
 data = listRdd.collect()
 print(data)
+

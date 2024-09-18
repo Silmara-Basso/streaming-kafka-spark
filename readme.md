@@ -86,3 +86,13 @@ docker exec sil-pyspark-master spark-submit --deploy-mode client ./apps/column_o
 ### Lab25 - maptype - dataframe column
 docker exec sil-pyspark-master spark-submit --deploy-mode client ./apps/maptype-dataframe-column.py
 
+### Lab26 - rdd
+docker exec sil-pyspark-master spark-submit --deploy-mode client ./apps/rdd/rdd.py
+docker exec sil-pyspark-master spark-submit --deploy-mode client ./apps/rdd/rdd_actions.py
+docker exec sil-pyspark-master spark-submit --deploy-mode client ./apps/rdd/rdd_broadcast.py
+docker exec sil-pyspark-master spark-submit --deploy-mode client ./apps/rdd/rdd_map.py
+docker exec sil-pyspark-master spark-submit --deploy-mode client ./apps/rdd/rdd-flatMap.py
+docker exec sil-pyspark-master spark-submit --deploy-mode client ./apps/rdd/rdd_dataframe.py
+docker exec sil-pyspark-master spark-submit --deploy-mode client ./apps/rdd/rdd_reduceByKey.py
+docker exec sil-pyspark-master spark-submit --deploy-mode client ./apps/rdd/rdd_reduce.py
+docker exec sil-pyspark-master spark-submit --deploy-mode client ./apps/rdd/rdd_reduce2.py
