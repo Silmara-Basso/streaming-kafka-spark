@@ -107,3 +107,6 @@ docker exec sil-pyspark-master spark-submit --deploy-mode client ./apps/rdd/rdd_
 
 ### Lab27 - Partition By
 docker exec sil-pyspark-master spark-submit --deploy-mode client ./apps/partitionby.py
+
+### Lab28 - Mappartition
+docker exec sil-pyspark-master spark-submit --deploy-mode client ./apps/mappartitions.py
