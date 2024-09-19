@@ -3,7 +3,6 @@
 import os
 from pyspark.sql import SparkSession
 
-# Ambiente
 os.environ['TERM'] = 'xterm'
 os.system('clear')
 
@@ -49,7 +48,6 @@ rdd3.saveAsTextFile("/opt/spark/data/coalesce2")
 # nodes in a cluster. This technique is important for optimizing the performance of operations that involve data shuffling, 
 # such as grouping (groupBy), joins, and sorts (sortBy). Repartitioning an RDD or a DataFrame can help 
 # improve the efficiency of parallel processing and manage the workload across nodes.
-
 
 df = spark.read.option("header",True).csv("/opt/spark/data/dataset2.csv")
 
