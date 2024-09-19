@@ -113,3 +113,6 @@ docker exec sil-pyspark-master spark-submit --deploy-mode client ./apps/mapparti
 
 ### Lab29 - Mappartition
 docker exec sil-pyspark-master spark-submit --deploy-mode client ./apps/repartition.py
+
+### Lab29 - Mappartition
+docker exec sil-pyspark-master spark-submit --deploy-mode client ./apps/repartition.py

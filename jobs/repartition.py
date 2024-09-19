@@ -32,6 +32,7 @@ rdd1 = spark.sparkContext.parallelize((0,25), 6)
 print("Number of Partitions in Parallelize: " + str(rdd1.getNumPartitions()))
 
 # Saves the RDD to a text file in the specified directory
+
 rdd1.saveAsTextFile("/opt/spark/data/lab_partition1")
 
 # Repartition RDD1 into 4 partitions using repartition method
@@ -50,4 +51,23 @@ rdd3.saveAsTextFile("/opt/spark/data/coalesce2")
 # improve the efficiency of parallel processing and manage the workload across nodes.
 
 
+df = spark.read.option("header",True).csv("/opt/spark/data/dataset2.csv")
+
+df1 = df.repartition(3)
+
+print("Number of df1 Partitions: " + str(df1.rdd.getNumPartitions()))
+
+df1.write.option("header",True).mode("overwrite").csv("/opt/spark/data/zipcodes-state")
+
+df2 = df.repartition(3,"state")
+
+print("Number of df2 Partitions: " + str(df2.rdd.getNumPartitions()))
+
+df2.write.option("header",True).mode("overwrite").csv("/opt/spark/data/zipcodes-state-3state")
+
+df3 = df.repartition("state")
+
+print("Number of df3 Partitions: " + str(df3.rdd.getNumPartitions()))
+
+df3.write.option("header",True).mode("overwrite").csv("/opt/spark/data/zipcodes-state-allstate")
 
