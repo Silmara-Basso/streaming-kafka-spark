@@ -61,6 +61,7 @@ df2 = df.repartition(3,"state")
 
 print("Number of df2 Partitions: " + str(df2.rdd.getNumPartitions()))
 
+#Max 3 state for partition
 df2.write.option("header",True).mode("overwrite").csv("/opt/spark/data/zipcodes-state-3state")
 
 df3 = df.repartition("state")

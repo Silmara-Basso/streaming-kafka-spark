@@ -111,8 +111,8 @@ docker exec sil-pyspark-master spark-submit --deploy-mode client ./apps/partitio
 ### Lab28 - Mappartition
 docker exec sil-pyspark-master spark-submit --deploy-mode client ./apps/mappartitions.py
 
-### Lab29 - Mappartition
+### Lab29 - Re-partition
 docker exec sil-pyspark-master spark-submit --deploy-mode client ./apps/repartition.py
 
-### Lab29 - Mappartition
-docker exec sil-pyspark-master spark-submit --deploy-mode client ./apps/repartition.py
+### Lab30 - Range partition
+docker exec sil-pyspark-master spark-submit --deploy-mode client ./apps/range_partition.py
