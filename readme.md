@@ -119,3 +119,6 @@ docker exec sil-pyspark-master spark-submit --deploy-mode client ./apps/range_pa
 
 ### Lab31 - Dataframe repartition
 docker exec sil-pyspark-master spark-submit --deploy-mode client ./apps/df_repartition.py
+
+### Lab31 - Dataframe repartition
+docker exec sil-pyspark-master spark-submit --deploy-mode client ./apps/udf.py
