@@ -122,3 +122,12 @@ docker exec sil-pyspark-master spark-submit --deploy-mode client ./apps/df_repar
 
 ### Lab32 - Dataframe repartition
 docker exec sil-pyspark-master spark-submit --deploy-mode client ./apps/udf.py
+
+### Lab32 - Parallelize
+docker exec sil-pyspark-master spark-submit --deploy-mode client ./apps/parallelize.py
+
+### Lab 33 - Time
+docker exec sil-pyspark-master spark-submit --deploy-mode client ./apps/time.py
+
+### Lab 34 - Window Functions
+docker exec sil-pyspark-master spark-submit --deploy-mode client ./apps/window_functions.py
